@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SimpleMath</string>
+    <string name="null_name">Не введен ответ</string>
+    <string name="correct">Правильно!!!</string>
+    <string name="incorrect">Неверно!!!</string>
+    <string name="start">СТАРТ</string>
+    <string name="add_person">Добавить нового ученика</string>
+    <string name="delete_person">Удалить ученика</string>
+    <string name="add">Добавить</string>
+    <string name="next">ДАЛЕЕ</string>
+    <string name="check">ПРОВЕРИТЬ</string>
+    <string name="correct_answer">Какой правильный ответ?</string>
+    <string name="must_select_mode">Необходимо выбрать режим и ученика!</string>
+    <string name="must_select_study">Необходимо выбрать ученика!</string>
+    <string name="name_exists">Такое имя уже есть!</string>
+    <string name="full_list">Учеников не может быть больше 8-ми!</string>
+    <string name="write_name">Напиши свое имя</string>
+    <string name="show_progress">Для показа статистики ответов, выберите режим и ученика</string>
+    <string name="yes">ДА</string>
+    <string name="no">НЕТ</string>
+
+    <string-array name="change">
+        <item>"ВЫБРАТЬ РЕЖИМ"</item>
+        <item>Режим умножения</item>
+        <item>Режим деление</item>
+    </string-array>
+
+
+
+</resources>

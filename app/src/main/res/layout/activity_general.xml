@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/starsphoto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/change"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:background="@drawable/frame_spinner"
+            android:entries="@array/change"
+            android:theme="@style/spinnerTheme" />
+
+        <Spinner
+            android:id="@+id/change_Person"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:textColor="#34D800"
+            android:background="@drawable/frame_spinner"
+            android:theme="@style/spinnerTheme" />
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_button"
+            android:onClick="start"
+            android:text="@string/start"
+            android:textColor="#34D800" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text=""
+        android:textColor="#34D800"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="146dp"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/write_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/write_name"
+            android:textColor="#FF3333"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/namePerson_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:ems="10"
+            android:gravity="center"
+            android:maxLength="10"
+            android:textColor="#34D800"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame_button"
+            android:onClick="add"
+            android:text="@string/add"
+            android:textColor="#34D800" />
+
+        <TextView
+            android:id="@+id/show_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80sp"
+            android:text="@string/show_progress"
+            android:textColor="#34D800"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/bottom"
+        android:layout_marginTop="-89dp"
+        android:baselineAligned="false"
+
+
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/frame_button"
+            android:onClick="yes"
+            android:text="@string/yes"
+            android:textColor="#34D800" />
+
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/frame_button"
+            android:onClick="yes"
+            android:text="@string/no"
+            android:textColor="#34D800" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addPerson"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_button"
+            android:onClick="addPerson"
+            android:text="@string/add_person"
+            android:textColor="#34D800" />
+
+        <Button
+            android:id="@+id/deletePerson"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_button"
+            android:onClick="deletePerson"
+            android:text="@string/delete_person"
+            android:textColor="#34D800" />
+    </LinearLayout>
+
+</RelativeLayout>
